@@ -1,31 +1,30 @@
 
 import React from "react";
 import {
-
   FiChevronDown,
   FiChevronUp,
   FiChevronLeft,
   FiChevronRight,
-
 } from "react-icons/fi";
 
-import Image from "next/image";
+import { useRouter } from 'next/router';
+
 
 import Link from "next/link";
 import IconsData from "@/data/IconsData";
 
 const Sidebar = ({ menuLinks }) => {
-  const currentPage = '/Users' //will have to work on current page
+
+  const currentPage = useRouter()
+
 
   const [collapsed, setCollapsed] = React.useState(false);
   const [menuItems, setMenuItems] = React.useState(menuLinks)
   const [sidebarCollapsed, setSidebarCollapsed] = React.useState(false);
 
-
   const handleCollapse = () => {
     setCollapsed(!collapsed);
-    setSidebarCollapsed(!sidebarCollapsed); // toggle the state variable
-
+    setSidebarCollapsed(!sidebarCollapsed);
   };
 
   const handleSubItemCollapse = (itemIndex, subIndex) => {
@@ -34,13 +33,11 @@ const Sidebar = ({ menuLinks }) => {
     setMenuItems(newMenuItems);
   };
 
-
   return (
     <nav
       className={`${collapsed ? "w-16" : "w-64"
         } bg-white transition-all duration-300 ease-in-out h-screen border-r border-gray-200`}
     >
-
       <div className="flex flex-col h-full">
         <div className="flex  flex-col items-center justify-between p-4 border-b border-gray-200">
 
@@ -65,15 +62,12 @@ const Sidebar = ({ menuLinks }) => {
             {menuItems?.map((item, index) => (
               <div key={item.id}>
                 <div
-                  className={`flex items-center justify-between px-4 py-3 text-gray-700 ${item.path === currentPage ? "bg-gray-200" : ""
+                  className={`flex items-center justify-between px-4 py-3 text-gray-700 ${`${item.path}` === currentPage.pathname ? "bg-gray-200" : ""
                     }`}
                 >
                   <Link href={item.path}>
                     <div className="flex gap-2 items-center">
-
-                  
-                     <IconsData iconName={item.icon} />
-
+                      <IconsData iconName={item.icon} />
 
                       {
                         !collapsed ? (<div>{item.title}</div>) : null
@@ -111,9 +105,8 @@ const Sidebar = ({ menuLinks }) => {
                           }`}
                       >
                         <div className="flex ">
-                        
-                          <IconsData iconName={subItem.icon} />
 
+                          <IconsData iconName={subItem.icon} />
 
                           <Link href={subItem.path}>{subItem.title}</Link>
 

@@ -2,15 +2,15 @@ import React from 'react'
 import Layout from '@/components/Layout'
 import { getStaticProps } from '../api/api';
 
-function QuickStartGuide({ menu }) {
+function CustomDashboard({ menu }) {
   return (
     <Layout menuLinks={menu}>
       
-      QuickStartGuide
+      CustomDashboard
       
       </Layout>
   )
 }
 
-export default QuickStartGuide
+export default CustomDashboard
 export { getStaticProps }
