@@ -1,7 +1,7 @@
 
 import Layout from '@/components/Layout';
 import React from 'react'
-import { getStaticProps } from './api/api';
+import { getStaticProps } from './MongodbDrivers/sideBarData';
 
 const User = ({ menu }) => {
   return (

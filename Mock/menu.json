@@ -1,0 +1,158 @@
+[
+   {
+      "id":1,
+      "title":"Quick Start Guide",
+      "icon":"Fikey",
+      "path":"/guide",
+      "subItems":[
+         
+      ],
+      "collapsed":false
+   },
+   {
+      "id":2,
+      "title":"Global Dashboard",
+      "icon":"FiGlobe",
+      "path":"/dashboard",
+      "subItems":[
+         
+      ],
+      "collapsed":false
+   },
+   {
+      "id":3,
+      "title":"Custom Dashboard",
+      "icon":"FiTool",
+      "path":"/customdashboard",
+      "subItems":[
+         
+      ],
+      "collapsed":false
+   },
+   {
+      "id":4,
+      "title":"Locations",
+      "icon":"FiHome",
+      "path":"/posts",
+      "subItems":[
+         {
+            "id":12,
+            "icon":"FiServer",
+            "title":"Manage Work",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":13,
+            "icon":"FiGrid",
+            "title":"Assets",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":14,
+            "icon":"FiTool",
+            "title":"PMs",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":15,
+            "icon":"GiGears",
+            "title":"Parts",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":15,
+            "icon":"FiUsers",
+            "title":"Teams",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":15,
+            "icon":"FiCreditCard",
+            "title":"Vendors",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         },
+         {
+            "id":15,
+            "icon":"FiDollarSign",
+            "title":"Purchasing",
+            "path":"/posts/1",
+            "collapsed":false,
+            "subItems":[
+               
+            ]
+         }
+      ],
+      "collapsed":true
+   },
+   {
+      "id":5,
+      "title":"Calendar",
+      "icon":"FiCalendar",
+      "path":"/calendar",
+      "subItems":[
+         
+      ],
+      "collapsed":false,
+      "subItems":[
+         
+      ]
+   },
+   {
+      "id":6,
+      "title":"Settings",
+      "icon":"FiSettings",
+      "path":"/settings",
+      "subItems":[
+         {
+            "id":17,
+            "title":"User 1",
+            "path":"/users/1",
+            "collapsed":false,
+            "subItems":[
+               {
+                  "id":18,
+                  "title":"User 2",
+                  "path":"/users/1",
+                  "collapsed":false,
+                  "subItems":[
+                     {
+                        "id":19,
+                        "title":"User 3",
+                        "path":"/users/1",
+                        "collapsed":false,
+                        "subItems":[
+                           
+                        ]
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
+      "collapsed":true
+   }
+]
